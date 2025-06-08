@@ -3,7 +3,7 @@ const questions = [
         question: "What is the capital of France?",
         options: ["Berlin", "Madrid", "Paris", "Rome"],
         answer: "Paris",
-        question-image: "images/france.jpg"  // Added missing comma after "answer"
+        questionImage: "images/france.jpg"  // Changed to camelCase
     },
     {
         question: "Which planet is known as the Red Planet?",
@@ -14,7 +14,7 @@ const questions = [
         question: "What is 2 + 2?",
         options: ["3", "4", "5", "6"],
         answer: "4",
-        question-image: "images/theater.jpg"  // Added missing comma after "answer"
+        questionImage: "images/theater.jpg"  // Changed to camelCase
     },
     {
         question: "Which party was Rudolf Breitscheid not part of",
@@ -33,7 +33,7 @@ let score = 0;
 
 const questionElement = document.getElementById('question');
 const optionsElement = document.getElementById('options');
-const imageElement = document.getElementById('question-image');  // Fixed: Use getElementById
+const imageElement = document.getElementById('question-image');
 const nextBtn = document.getElementById('next-btn');
 const resultElement = document.getElementById('result');
 
@@ -41,9 +41,9 @@ function loadQuestion() {
     const q = questions[currentQuestion];
     questionElement.textContent = q.question;
     
-    // Handle image display
-    if (q.image) {
-        imageElement.src = q.image;
+    // Handle image display - using camelCase
+    if (q.questionImage) {
+        imageElement.src = q.questionImage;
         imageElement.style.display = 'block';
     } else {
         imageElement.style.display = 'none';
@@ -62,9 +62,9 @@ function checkAnswer(selected) {
     const q = questions[currentQuestion];
     if (selected === q.answer) {
         score++;
-        resultElement.textContent = "Wow!";
+        resultElement.textContent = "Correct!";
     } else {
-        resultElement.textContent = `Whore! The answer is ${q.answer}.`;
+        resultElement.textContent = `Wrong! The answer is ${q.answer}.`;
     }
     currentQuestion++;
     if (currentQuestion < questions.length) {
@@ -81,7 +81,7 @@ nextBtn.addEventListener('click', () => {
 });
 
 function showResult() {
-    questionElement.textContent = `Bitch, I'm not done with you! Your score: ${score}/${questions.length}`;
+    questionElement.textContent = `Quiz completed! Your score: ${score}/${questions.length}`;
     optionsElement.innerHTML = '';
     nextBtn.style.display = 'none';
 }

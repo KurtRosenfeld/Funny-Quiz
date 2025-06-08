@@ -3,7 +3,7 @@ const questions = [
         question: "What is the capital of France?",
         options: ["Berlin", "Madrid", "Paris", "Rome"],
         answer: "Paris",
-        image: "images/france.jpg"  // Added missing comma after "answer"
+        question-image: "images/france.jpg"  // Added missing comma after "answer"
     },
     {
         question: "Which planet is known as the Red Planet?",
@@ -14,7 +14,7 @@ const questions = [
         question: "What is 2 + 2?",
         options: ["3", "4", "5", "6"],
         answer: "4",
-        image: "images/theater.jpg"  // Added missing comma after "answer"
+        question-image: "images/theater.jpg"  // Added missing comma after "answer"
     },
     {
         question: "Which party was Rudolf Breitscheid not part of",

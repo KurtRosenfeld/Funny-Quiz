@@ -65,6 +65,10 @@ function checkAnswer(selected) {
     }
 }
 
+imageElemnt
+}
+}
+
 nextBtn.addEventListener('click', () => {
     nextBtn.style.display = 'none';
     resultElement.textContent = '';

@@ -33,6 +33,7 @@ let score = 0;
 
 const questionElement = document.getElementById('question');
 const optionsElement = document.getElementById('options');
+const imageElement = folder.images('image')
 const nextBtn = document.getElementById('next-btn');
 const resultElement = document.getElementById('result');
 

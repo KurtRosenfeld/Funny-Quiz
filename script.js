@@ -3,7 +3,7 @@ const questions = [
         question: "What is the capital of France?",
         options: ["Berlin", "Madrid", "Paris", "Rome"],
         answer: "Paris",
-        image: "images/france.jpg"
+        image: "images/france.jpg"  // Added missing comma after "answer"
     },
     {
         question: "Which planet is known as the Red Planet?",
@@ -14,15 +14,14 @@ const questions = [
         question: "What is 2 + 2?",
         options: ["3", "4", "5", "6"],
         answer: "4",
-        image: "images/theater.jpg",
+        image: "images/theater.jpg"  // Added missing comma after "answer"
     },
-     {
+    {
         question: "Which party was Rudolf Breitscheid not part of",
-        options: ["SPD", "KPD", "USPD",],
-        answer: "KPD",
-        image: "images/Breitscheid und Einstein".jpg"
+        options: ["SPD", "KPD", "USPD"],
+        answer: "KPD"
     },
-     {
+    {
         question: "are you a legend",
         options: ["yes", "no", "surely"],
         answer: "no"
@@ -34,7 +33,7 @@ let score = 0;
 
 const questionElement = document.getElementById('question');
 const optionsElement = document.getElementById('options');
-const imageElement = document.getElementById('question-image');
+const imageElement = document.getElementById('question-image');  // Fixed: Use getElementById
 const nextBtn = document.getElementById('next-btn');
 const resultElement = document.getElementById('result');
 

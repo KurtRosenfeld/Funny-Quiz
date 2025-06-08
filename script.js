@@ -50,9 +50,9 @@ function checkAnswer(selected) {
     const q = questions[currentQuestion];
     if (selected === q.answer) {
         score++;
-        resultElement.textContent = "Correct!";
+        resultElement.textContent = "Wow!";
     } else {
-        resultElement.textContent = `Wrong! The answer is ${q.answer}.`;
+        resultElement.textContent = `Whore! The answer is ${q.answer}.`;
     }
     currentQuestion++;
     if (currentQuestion < questions.length) {
@@ -69,7 +69,7 @@ nextBtn.addEventListener('click', () => {
 });
 
 function showResult() {
-    questionElement.textContent = `Quiz completed! Your score: ${score}/${questions.length}`;
+    questionElement.textContent = `Bitch, I'm not done with you! Your score: ${score}/${questions.length}`;
     optionsElement.innerHTML = '';
     nextBtn.style.display = 'none';
 }

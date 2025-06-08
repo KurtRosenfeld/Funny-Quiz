@@ -13,6 +13,16 @@ const questions = [
         question: "What is 2 + 2?",
         options: ["3", "4", "5", "6"],
         answer: "4"
+    },
+     {
+        question: "Which party was Rudolf Breitscheid not part of",
+        options: ["SPD", "KPD", "USPD",],
+        answer: "KPD"
+    },
+     {
+        question: "are you a legend",
+        options: ["yes", "no", "surely"],
+        answer: "no"
     }
 ];
 
